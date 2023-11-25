@@ -5,7 +5,9 @@ playAgain.onclick =()=>{
 }
   
 phrase=["omg,You are a good typist." , "I like your typing Speed." , "Amazing Speed.",
- "So beautiful So Amazing just typing like a wow."]
+ "So beautiful So Amazing just typing like a wow." ]
+
+    negative_Phrases=["Try Again,Champ . You need to improve"]
   
  function generateRandomWord(words) {
     return words[Math.floor(Math.random() * words.length)];
@@ -15,11 +17,17 @@ phrase=["omg,You are a good typist." , "I like your typing Speed." , "Amazing Sp
  const storage = parseInt(localStorage.getItem("score"));
  const getData = (localStorage.getItem("username"));
 
+
+
  const phrasing = generateRandomWord(phrase);
 
 var message = document.getElementById("displayscore")
+if (storage<5) {
+    message.innerHTML = negative_Phrases[0];
+}
+if(message>5){
 message.innerHTML = phrasing + " Your Score is " + storage ;
-
+}
 
 const background =new Audio('./Assets/assets_bgm.mp3')
   background.play();
