@@ -1,6 +1,7 @@
 const playAgain = document.getElementById("playagain")
 playAgain.onclick =()=>{
     location.href= './play.html'
+    localStorage.clear();
 }
   
 phrase=["omg,You are a good typist." , "I like your typing Speed." , "Amazing Speed.",
