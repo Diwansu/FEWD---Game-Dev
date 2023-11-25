@@ -89,7 +89,8 @@ function drawWord() {
 
 
     function updateScore() {
-        score += 1;
+        score = 0;
+       score=score+1 ;
         localStorage.setItem("score",score);
         scoreElementID.innerText = score;
         const pointSound = new Audio ('./Assets/positive_beeps-85504.mp3') ;
