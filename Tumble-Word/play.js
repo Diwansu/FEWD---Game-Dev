@@ -36,7 +36,7 @@ const DICTIONARY = [
 
 setInterval(() => {
     drawWord();
-}, 3000)
+}, 2500)
  
 //  I use concept of https://github.com/toyamarodrigo to drawWord and makeWord here.However I applied some animation effect and modified as
 //  per the need . 
