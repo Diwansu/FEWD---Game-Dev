@@ -23,7 +23,7 @@ phrase=["omg,You are a good typist." , "I like your typing Speed." , "Amazing Sp
 
 var message = document.getElementById("displayscore")
 if (storage<5) {
-    message.innerHTML = negative_Phrases;
+    message.innerHTML = negative_Phrases + "Your Score is" + storage ;
 }
 else{
 message.innerHTML = phrasing + " Your Score is " + storage ;
