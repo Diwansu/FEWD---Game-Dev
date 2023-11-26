@@ -25,7 +25,7 @@ var message = document.getElementById("displayscore")
 if (storage<5) {
     message.innerHTML = negative_Phrases;
 }
-if(message>5){
+else{
 message.innerHTML = phrasing + " Your Score is " + storage ;
 }
 
