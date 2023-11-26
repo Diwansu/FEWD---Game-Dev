@@ -3,6 +3,7 @@ var inputElementID = document.getElementById("InputWord");
  var gameBody = document.getElementById("game-body"); 
 
  var score = 0;
+localStorage.setItem("score",score);
  let arrWords = [];
 let arrWordsDiv = [];
  
