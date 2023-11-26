@@ -7,7 +7,7 @@ playAgain.onclick =()=>{
 phrase=["omg,You are a good typist." , "I like your typing Speed." , "Amazing Speed.",
  "So beautiful So Amazing just typing like a wow." ]
 
-    negative_Phrases=["Try Again,Champ . You need to improve"]
+  var  negative_Phrases=("Try Again,Champ . You need to improve")
   
  function generateRandomWord(words) {
     return words[Math.floor(Math.random() * words.length)];
@@ -23,7 +23,7 @@ phrase=["omg,You are a good typist." , "I like your typing Speed." , "Amazing Sp
 
 var message = document.getElementById("displayscore")
 if (storage<5) {
-    message.innerHTML = negative_Phrases[0];
+    message.innerHTML = negative_Phrases;
 }
 if(message>5){
 message.innerHTML = phrasing + " Your Score is " + storage ;
